@@ -3,7 +3,7 @@ import pandas as pd
 import datetime as dt
 import time
 
-gc = gsp.service_account(filename = 'E:\COMPUTER\Python 3\experiments\Google Sheets Automation\sage-reach-309201-06113ed6791b.json')
+gc = gsp.service_account(filename = 'sage-reach-309201-06113ed6791b.json')
 
 sh = gc.open('TestTimeHeroku')
 worksheet1 = sh.sheet1
