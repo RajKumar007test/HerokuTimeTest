@@ -10,7 +10,7 @@ app.run(debug=False, port=int(environ.get('PORT',5000)), host='0.0.0.0')
 #app.run(environ.get('PORT'))
 
 
-app.route('/')
+@app.route('/')
 gc = gsp.service_account(filename = 'sage-reach-309201-06113ed6791b.json')
 
 sh = gc.open('TestTimeHeroku')
