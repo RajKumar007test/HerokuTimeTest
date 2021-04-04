@@ -1,7 +1,12 @@
 import gspread as gsp
 import pandas as pd
+from os import environ
+from flask import Flask
 import datetime as dt
 import time
+
+app = Flask(__name__)
+app.run(environ.get('PORT'))
 
 gc = gsp.service_account(filename = 'sage-reach-309201-06113ed6791b.json')
 
